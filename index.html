@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech:400,600,700|Open+Sans:400,500,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <title>Rework Scholarship</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navigation -->
+        <div class="nav-container">
+            <img src="logo.png" alt="Rework Logo">
+            <nav class="nav-main">
+                <ul>
+                    <li><a href="#">Why Rework Academy</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Smarties</a></li>
+                    <li><a href="#">Hire our Graduates</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Body -->
+        <div class="main-container">
+
+            <!-- Header -->
+            <h2>Scholarship Application Form</h2>
+
+            <!-- Form -->
+            <div class="form-container">
+                <form>
+                    <div class="innerform-container">
+
+                        <!-- Firstname and Lastname -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Firstname</label>
+                                <input type="text" class="input-box-1" id="fName">
+                                <span></span>
+                            </div>
+                            <div class="input-set">
+                                <label class="top-label">Lastname</label>
+                                <input type="text" class="input-box-2" id="lName">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Date of birth and gender -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Date of Birth</label>
+                                <input type="date" class="input-box-1" id="dob">
+                                <span></span>
+                            </div>
+                            <div class="input-set">
+                                <label class="top-label">Gender</label>
+                                <select name="Gender" id="gender" class="input-box-1">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Phone number and school -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Phone Number</label>
+                                <input type="number" class="input-box-1" id="pNum">
+                                <span></span>
+                            </div>
+                            <div class="input-set">
+                                <label class="top-label">School</label>
+                                <input type="text" class="input-box-2" id="school">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Continent and country -->
+                        <div class="input-set-container">
+
+                            <!-- Continent -->
+                            <div class="input-set">
+                                <label class="top-label">Continent</label>
+                                <select name="continent" id="continent" class="input-box-1">
+                                    <option value="">Select</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="northamerica">North America</option>
+                                    <option value="southamerica">South America</option>
+                                </select>
+                                <span></span>
+                            </div>
+
+                            <!-- Africa -->
+                            <div class="input-set c-hidden" id="africaBlock">
+                                <label class="top-label">Africa</label>
+                                <select name="africa" id="africa" class="input-box-2">
+                                    <option value="">Select</option>
+                                    <option value="algeria">Algeria</option>
+                                    <option value="benin">Benin</option>
+                                    <option value="cameroon">Cameroon</option>
+                                    <option value="egypt">Egypt</option>
+                                    <option value="ghana">Ghana</option>
+                                    <option value="kenya">Kenya</option>
+                                    <option value="nigeria">Nigeria</option>
+                                    <option value="southafrica">South Africa</option>
+                                    <option value="togo">Togo</option>
+                                </select>
+                                <span class="country"></span>
+                            </div>
+
+                            <!-- Asia -->
+                            <div class="input-set c-hidden" id="asiaBlock">
+                                <label class="top-label">Asia</label>
+                                <select name="asia" id="asia" class="input-box-2">
+                                    <option value="">Select</option>
+                                    <option value="china">China</option>
+                                    <option value="india">Indian</option>
+                                    <option value="iran">Iran</option>
+                                    <option value="japan">Japat</option>
+                                    <option value="nkorea">North Korea</option>
+                                    <option value="skorea">South Korea</option>
+                                    <option value="singapore">Singapore</option>
+                                    <option value="thailand">Thailand</option>
+                                    <option value="turkey">Turkey</option>
+                                </select>
+                                <span class="country"></span>
+                            </div>
+
+                            <!-- Europe -->
+                            <div class="input-set c-hidden" id="europeBlock">
+                                <label class="top-label">Europe</label>
+                                <select name="europe" id="europe" class="input-box-2">
+                                    <option value="">Select</option>
+                                    <option value="england">England</option>
+                                    <option value="france">France</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="poland">Poland</option>
+                                    <option value="russia">Russia</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="sweden">Sweden</option>
+                                    <option value="southafrica">South Africa</option>
+                                    <option value="ukraine">Ukraine</option>
+                                </select>
+                                <span class="country"></span>
+                            </div>
+
+                            <!-- North America -->
+                            <div class="input-set c-hidden" id="northBlock">
+                                <label class="top-label">North America</label>
+                                <select name="northamerica" id="northAmerica" class="input-box-2">
+                                    <option value="">Select</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="cuba">Cuba</option>
+                                    <option value="dominica">Dominica Republic</option>
+                                    <option value="greenland">Greenland</option>
+                                    <option value="jamaica">Jamaica</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="panama">Panama</option>
+                                    <option value="peurtorico">Porto Rico</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                                <span class="country"></span>
+                            </div>
+
+                            <!-- South America -->
+                            <div class="input-set c-hidden" id="southBlock">
+                                <label class="top-label">South America</label>
+                                <select name="southamerica" id="southAmerica" class="input-box-2">
+                                    <option value="">Select</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="brazil">Brazil</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="peru">Peru</option>
+                                    <option value="uruguay">Uruguay</option>
+                                    <option value="venezuela">Venezuela</option>
+                                </select>
+                                <span class="country"></span>
+                            </div>
+                        </div>
+
+                        <!-- Maths -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <!-- Maths -->
+                                <label class="top-label">Mathematics</label>
+                                <select name="mathematics" id="sub1" class="input-box-2" disabled>
+                                    <option value="maths">Mathematics</option>
+                                    <option value="english">English</option>
+                                    <option value="agric">Agriculture</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="commerce">Commerce</option>
+                                    <option value="civic">Civic Education</option>
+                                    <option value="economics">Economics</option>
+                                    <option value="foodandnut">Food and Nutrition</option>
+                                    <option value="fmaths">Further Mathematics</option>
+                                    <option value="government">Government</option>
+                                    <option value="homec">Home Economics</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="td">Technical Drawing</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="varts">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for maths -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub1Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- English -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">English</label>
+                                <select name="english" id="sub2" class="input-box-2" disabled>
+                                    <option value="english">English</option>
+                                    <option value="maths">Mathematics</option>
+                                    <option value="agric">Agriculture</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="commerce">Commerce</option>
+                                    <option value="civic">Civic Education</option>
+                                    <option value="economics">Economics</option>
+                                    <option value="foodandnut">Food and Nutrition</option>
+                                    <option value="fmaths">Further Mathematics</option>
+                                    <option value="government">Government</option>
+                                    <option value="homec">Home Economics</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="td">Technical Drawing</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="varts">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for English -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub2Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 3 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 3</label>
+                                <select name="subject3" id="sub3" class="input-box-2 subjectSelect" >
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub3 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub3Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 4 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 4</label>
+                                <select name="subject4" id="sub4" class="input-box-2 subjectSelect">
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub4 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub4Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 5 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 5</label>
+                                <select name="subject5" id="sub5" class="input-box-2 subjectSelect">
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub5 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub5Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 6 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 6</label>
+                                <select name="subject6" id="sub6" class="input-box-2 subjectSelect">
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub6 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub6Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 7 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 7</label>
+                                <select name="subject7" id="sub7" class="input-box-2 subjectSelect">
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub7 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub7Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject 8 -->
+                        <div class="input-set-container">
+                            <div class="input-set">
+                                <label class="top-label">Subject 8</label>
+                                <select name="subject8" id="sub8" class="input-box-2 subjectSelect">
+                                    <option value="">Select</option>
+                                    <option value="english" disabled>English</option>
+                                    <option value="maths" disabled>Mathematics</option>
+                                    <option value="agric" class="subs1">Agriculture</option>
+                                    <option value="biology" class="subs2">Biology</option>
+                                    <option value="chemistry" class="subs3">Chemistry</option>
+                                    <option value="commerce" class="subs4">Commerce</option>
+                                    <option value="civic" class="subs5">Civic Education</option>
+                                    <option value="economics" class="subs6">Economics</option>
+                                    <option value="foodandnut" class="subs7">Food and Nutrition</option>
+                                    <option value="fmaths" class="subs8">Further Mathematics</option>
+                                    <option value="government" class="subs9">Government</option>
+                                    <option value="homec" class="subs10">Home Economics</option>
+                                    <option value="marketing" class="subs11">Marketing</option>
+                                    <option value="td" class="subs12">Technical Drawing</option>
+                                    <option value="physics" class="subs13">Physics</option>
+                                    <option value="varts" class="subs14">Visual Arts</option>
+                                </select>
+                                <span></span>
+                            </div>
+                            <!-- Score for Sub8 -->
+                            <div class="input-set">
+                                <label class="top-label">Score</label>
+                                <input type="number" class="input-box-1" id="sub8Score">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="input-set-container">
+                            <button class="btn-submit" id="btnSubmit">Submit</button>
+                        </div>
+                        
+                    </div>
+                    
+
+                </form>
+            </div>
+
+
+            <!-- Result -->
+            <div class="result-container" id="resultContainer">
+                
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="nav-container">
+                <div class="footnote">
+                    <p><i class="fa-solid fa-copyright"></i>2022 Rework</p>
+                </div>
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>
